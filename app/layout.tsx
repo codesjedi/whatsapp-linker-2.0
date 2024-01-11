@@ -9,7 +9,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Whatsapp Linker',
-  description: 'Generate a link to send a message to a phone number',
+  description:
+    'Con nuestra aplicación de mensajes por WhatsApp, puedes enviar mensajes y contactar a tus clientes de manera rápida y sencilla. ¡Aprovecha esta oportunidad de mejorar tu comunicación!',
 };
 
 export default function RootLayout({
