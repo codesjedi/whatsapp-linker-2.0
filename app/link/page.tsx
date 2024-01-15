@@ -115,6 +115,8 @@ export default function Form() {
       <Link
         href={'https://enrique.digital'}
         className="mt-8 text-center text-white text-sm"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         <p>
           Desarrollado por Enrique Gimenez <CodeIcon className="inline-block" />

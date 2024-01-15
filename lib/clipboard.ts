@@ -23,7 +23,8 @@ export const getFromClipboard = async () => {
 
 export const phoneValidation = (phone?: string) => {
   const phoneSchema = z.string().refine((value) => {
-    return value.length === 10 && value.startsWith('09');
+    const phoneRegex = new RegExp(/^((\+595|0)9?([2-9][1-6])\d{6})$/);
+    return value.match(phoneRegex);
   }, 'Invalid phone number');
 
   return phoneSchema.safeParse(phone);
